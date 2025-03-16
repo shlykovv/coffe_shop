@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="sub-heading">
+    <h1>{{ post.title }}</h1>
+</div>
+
+            <div class="post">
+                <h2 class="post-title">{{ post.title }}</h2>
+                <p class="post-meta">Опубликовано: {{ post.created_at }}</p>    
+                
+                <div class="post-content-wrapper">
+                    <div class="post-content">
+                        <p>{{ post.description }}</p>
+                    </div>
+                    <img src="{{ post.image.url }}"
+                        alt="Новый вкус кофе" class="post-image">
+                </div>
+            </div>
+
+{% endblock content %}
