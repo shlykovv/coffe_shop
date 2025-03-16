@@ -1,0 +1,52 @@
+.header .login-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 35rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+.header .login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: none;
+    border: .1rem solid var(--color);
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--color);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: #666;
+}
+
+.header .login-form p a{
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.header .login-form .btn{
+    background: none;
+}
+
+.header .login-form .btn:hover{
+    background: var(--color);
+}

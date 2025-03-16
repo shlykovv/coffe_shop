@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="sub-heading">
+    <h1>our menu</h1>
+</div>
+
+<!-- menu section starts -->
+<section class="menu">
+
+    <div class="box-container">
+        {% for product in products %}
+        <div class="box">
+            <div class="image">
+                <img src="{{ product.image.url }}" alt="">
+            </div>
+            <div class="content">
+                <h3>{{ product.title }}</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">${{ product.sale}} <span>${{ product.price }}</span></div>
+            </div>
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+{% endblock content %}

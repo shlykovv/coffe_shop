@@ -1,0 +1,30 @@
+.home{
+    background: url("../images/main_page/home-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.home .content{
+    width: 55rem;
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: var(--color);
+    font-family: 'Merienda One', cursive;
+}
+
+.home .content p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #222;
+    line-height: 2;
+}
+
+.home .content .btn{
+    color: #fff;
+}
