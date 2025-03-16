@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- sub heading -->
+    <div class="sub-heading">
+        <h1>our blog</h1>
+    </div>
+    <!-- end -->
+
+    <!-- blog section starts -->
+
+    <section class="blog">
+
+        <div class="box-container">
+            {% for post in posts %}
+            <div class="box">
+                <div class="image">
+                    <img src="{{ post.image.url }}" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-calendar"></i> {{ post.created_at }}</a>
+                        <a href="#"> <i class="fas fa-heart"></i> 56 million</a>
+                    </div>
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.description|truncatewords:50 }}</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </section>
+    <!-- blog section ends -->
+{% endblock content %}

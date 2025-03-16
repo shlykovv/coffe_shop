@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     
     'main.apps.MainConfig',
     'catalog.apps.CatalogConfig',
+    'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
 ]
 

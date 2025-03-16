@@ -6,3 +6,4 @@ class Blog(models.Model):
     image = models.ImageField(upload_to='blog/')
     likes = models.PositiveIntegerField(default=0)
     created_at = models.DateField(auto_now_add=True)
+    published = models.BooleanField(default=True)
