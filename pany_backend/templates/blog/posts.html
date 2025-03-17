@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block title %}{{ title }}{% endblock title %}
+
 {% block content %}
 <!-- sub heading -->
     <div class="sub-heading">
@@ -20,7 +22,7 @@
                 <div class="content">
                     <div class="icons">
                         <a href="#"> <i class="fas fa-calendar"></i> {{ post.created_at }}</a>
-                        <a href="#"> <i class="fas fa-heart"></i> 56 million</a>
+                        <a href="#"> <i class="fas fa-heart"></i> 50 million</a>
                     </div>
                     <h3>{{ post.title }}</h3>
                     <p>{{ post.description|truncatechars:50 }}</p>
