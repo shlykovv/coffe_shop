@@ -5,7 +5,7 @@ from catalog.models import Product
 
 def get_products(request):
     products = Product.objects.all()
-    title = 'Наше меню'
+    title = 'Coffe - catalog'
     context = {
         'products': products,
         'title': title

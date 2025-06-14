@@ -4,9 +4,9 @@
 
     <nav class="navbar">
         <a href="{% url 'main:home' %}">home</a>
-        <a href="about.html">about</a>
+        <a href="{% url 'about:about' %}">about</a>
         <a href="{% url 'catalog:products' %}" class="active">Catalog</a>
-        <a href="review.html">review</a>
+        <a href="{% url 'reviews:reviews' %}">review</a>
         <a href="{% url 'blog:posts' %}">blogs</a>
         <a href="contact.html">contact</a>
     </nav>
