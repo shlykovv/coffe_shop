@@ -8,7 +8,8 @@ urlpatterns = [
     path('products/', include('catalog.urls', namespace='catalog')),
     path('', include('main.urls', namespace='main')),
     path('posts/', include('blog.urls', namespace='blog')),
-    path('about/', include('about.urls', namespace='about'))
+    path('about/', include('about.urls', namespace='about')),
+    path('reviews/', include('reviews.urls', namespace='reviews'))
 ]
 
 if settings.DEBUG:
