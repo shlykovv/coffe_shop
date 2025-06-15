@@ -10,4 +10,4 @@ def get_reviews(request):
         'reviews': reviews
     }
     return render(request, 'reviews/review.html', context=context)
-    
+
